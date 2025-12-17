@@ -50,11 +50,11 @@ body {
   display: flex;
   gap: 16px;
   overflow-x: auto;
-  padding: 12px 0;
+  padding: 16px 0;
   scroll-behavior: smooth;
 }
 
-/* Phone-like screenshot card */
+/* Screenshot card (NO absolute positioning) */
 .screen-bg {
   box-sizing: border-box;
   width: 138px;
@@ -73,10 +73,9 @@ body {
   align-items: center;
   justify-content: center;
 
-  flex-shrink: 0; /* IMPORTANT */
+  flex-shrink: 0;   /* VERY IMPORTANT */
+  position: relative; /* optional, safe */
 }
-
-
 
 /* Screenshot image */
 .screen-bg img {
@@ -84,7 +83,6 @@ body {
   height: auto;
   border-radius: 14px;
 }
-
 
 .screenshots img {
   width: 180px;
