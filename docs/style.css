@@ -45,11 +45,41 @@ body {
   text-decoration: none;
 }
 
+/* Screenshot container */
 .screenshots {
   display: flex;
-  gap: 10px;
+  gap: 16px;
   overflow-x: auto;
+  padding: 10px 0;
 }
+
+/* Rectangle 39930 */
+.screen-bg {
+  box-sizing: border-box;
+  width: 138px;
+  height: 281px;
+  background: linear-gradient(
+    359.97deg,
+    #212450 -5.9%,
+    #2F3162 99.97%
+  );
+  border: 1px solid #000000;
+  border-radius: 22px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+}
+
+/* Screenshot image */
+.screen-bg img {
+  width: 120px;
+  height: auto;
+  border-radius: 14px;
+}
+
 
 .screenshots img {
   width: 180px;
